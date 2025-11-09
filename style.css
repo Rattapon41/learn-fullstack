@@ -18,7 +18,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    transition: color 0.3s ease;
+    transition: color 1.5s ease;
 }
 
 nav a:hover {
@@ -34,6 +34,11 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
 h2 {
     color: #333;
 }
@@ -42,7 +47,7 @@ img {
     display: block;
     margin: 20px auto;
     width: 200px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 footer {
