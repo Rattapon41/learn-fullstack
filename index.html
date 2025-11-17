@@ -21,8 +21,27 @@
     </header>
     <!--ส่วนเนื้อหา-->
     <main>
-        <div class="profile-container">
-            <img src="./img/Profile.jpeg" alt="รูปโปรไฟล์ของ Rattapom Domhom">
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./img/Profile.jpeg" width="250px" height="300px">
+            </div>
+            <div class="mySlides fade">
+                <img src="./img/9375.webp" width="250px" height="300px">
+            </div>
+            <div class="mySlides fade">
+                <img src="./img/9454.jpg" width="250px" height="300px">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
         <section id="about">
             <h2>เกี่ยวกับฉัน</h2>
