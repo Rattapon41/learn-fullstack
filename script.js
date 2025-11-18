@@ -1,3 +1,4 @@
+// Slide Picture
 let slideIndex = 1;
 showSlides(slideIndex)
 
@@ -21,10 +22,25 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" ative","")
+        dots[i].className = dots[i].className.replace(" active","")
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " ative";
+    dots[slideIndex-1].className += " active";
 }
 
 showSlides(slideIndex);
+
+// Toggle Mobile Menu
+const menuBtn = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = navMenu.querySelectorAll('a');
+
+menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+})
+
+navLinks.forEach(links => {
+    links.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+    })
+})
